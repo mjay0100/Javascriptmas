@@ -1,5 +1,12 @@
 body {
-    background-image: url('/bg-xmas.png');
-    background-size: cover;
-    background-repeat: no-repeat
+  background-image: url("/bg-xmas.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sorted-container {
+  display: flex;
+}
+.unsorted-container {
+  display: flex;
 }
