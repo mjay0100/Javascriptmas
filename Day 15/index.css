@@ -1,0 +1,54 @@
+:root {
+  --black: #282828;
+  --blue: #2892f9;
+  --red: #fb2f27;
+  --yellow: #fdfe29;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("https://img.freepik.com/free-vector/businessman-direct-target_23-2147620904.jpg?size=626&ext=jpg&uid=R131174736&ga=GA1.2.1126037068.1700745276&semt=ais");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.ring-1 {
+  background-color: var(--black);
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ring-2 {
+  background-color: var(--blue);
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ring-3 {
+  background-color: var(--red);
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bullseye {
+  background-color: var(--yellow);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
