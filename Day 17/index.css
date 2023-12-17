@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-word: #5134ff;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+@keyframes cycleContent {
+  0%,
+  25% {
+    content: "coding";
+  }
+  25.01%,
+  50% {
+    content: "learning";
+  }
+  50.01%,
+  75% {
+    content: "basketball";
+  }
+  75.01%,
+  100% {
+    content: "swimming";
+  }
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.animated-content::after {
+  content: "";
+  background-color: var(--bg-word);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 900;
+  animation: cycleContent 8s linear infinite;
+}
